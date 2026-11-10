@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jack Simon</title>
+<meta name="description" content="Jack Simon: computer vision and deep learning for medical data, especially brain imaging, and RNA molecular dynamics. Stony Brook University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231D6A80'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='white' text-anchor='middle'%3EJS%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Jack Simon">
+<meta property="og:description" content="Computer vision and deep learning for brain imaging; RNA force fields; optimization. Stony Brook University.">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="id">
+    <h1>Jack Simon</h1>
+    <p class="lab">Stony Brook University<br>Huppert Lab and Nagan Lab</p>
+    <p class="contact"><a href="mailto:Jack.simon.1@stonybrook.edu">Jack.simon.1@stonybrook.edu</a><br><a href="pdfs/cv.pdf" target="_blank" rel="noopener">CV (PDF)</a></p>
+    <p class="bio">I work on computer vision and deep learning for messy medical data, especially functional brain imaging (fNIRS, fMRI), with the goal of portable, at-home brain imaging.</p>
+    <nav aria-label="Site">
+      <ul class="pages">
+        <li><a href="index.html" aria-current="page">Overview</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+      </ul>
+      <ul class="sections">
+        <li><a href="#research">Research</a></li>
+        <li><a href="#talks">Presentations and notes</a></li>
+        <li><a href="#teaching">Teaching and outreach</a></li>
+        <li><a href="#community">Community and work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="research" aria-labelledby="h-research">
+      <h2 id="h-research">Research</h2>
+      <div class="work">
+        <h3>Learned representations of fNIRS for functional brain mapping <span class="status">Huppert Lab</span></h3>
+        <p>We project fNIRS probe signals into the standard 10&ndash;20 scalp space and train CNNs to predict which function each activated brain region is performing. The goal is portable, at-home brain imaging with accuracy close to the lab.</p>
+        <details>
+          <summary>Tasks and research questions</summary>
+          <p>Functions: motor (left and right hand, left and right foot, tongue), language (math versus story), social cognition, and working memory (n-back).</p>
+          <ul class="plain">
+            <li><strong>Cross-subject:</strong> does a model trained on some people predict function in new people?</li>
+            <li><strong>Cross-task:</strong> after training on four cognitive tasks, can it predict the next four?</li>
+            <li><strong>Transfer:</strong> is it better to pretrain on ImageNet, then fMRI, then fNIRS, or to train on fNIRS directly?</li>
+          </ul>
+        </details>
+      </div>
+      <div class="work">
+        <h3>Conformational bias in RNA force fields <span class="status">Nagan Lab, URECA</span></h3>
+        <p>Comparing torsion distributions across thousands of molecular dynamics frames to detect conformational biases between force fields and solvent models, with the aim of refining their parameters. Porting the analysis to CUDA is in progress; poster planned for spring 2027.</p>
+      </div>
+      <div class="work">
+        <h3>Smoothing methods for nonsmooth optimization <span class="status">With Dr. Flynn, BNL</span></h3>
+        <p>Planned for summer 2027: the open questions on rate-tracking smoothing raised in my talk for Dr. Flynn's group, including when shrinking the smoothing radius during training guarantees convergence to Clarke-stationary points.</p>
+      </div>
+    </section>
+
+    <section id="talks" aria-labelledby="h-talks">
+      <h2 id="h-talks">Presentations and notes</h2>
+      <ul class="docs">
+        <li class="new">
+          <h3>Delta-Goldstein, Clarke Stationarity, Smoothed Gradient Descent and Optimization Theory</h3>
+          <p>November 2026. Talk for Dr. Flynn's group at Brookhaven National Laboratory: from optimization basics to Goldstein and Clarke stationarity, with open questions on rate-tracking smoothing.</p>
+          <a class="open" href="pdfs/goldstein-clarke-smoothing.pdf" target="_blank" rel="noopener">Open PDF</a>
+        </li>
+        <li class="new">
+          <h3>Kepler's Laws from the Newton&ndash;Euler Laws and Homothetic Symmetry</h3>
+          <p>November 2026. Equal areas, conic orbits, and the third law from the scaling symmetry of trajectories.</p>
+          <a class="open" href="pdfs/kepler-laws.pdf" target="_blank" rel="noopener">Open PDF</a>
+        </li>
+        <li>
+          <h3>Ordinary Differential Equations (Arnold)</h3>
+          <p>Spring 2025. Final presentation, Directed Reading Program.</p>
+          <a class="open" href="pdfs/drp-arnold-odes.pdf" target="_blank" rel="noopener">Open PDF</a>
+        </li>
+        <li>
+          <h3>RNA Torsions and Biases</h3>
+          <p>Nagan Lab talk.</p>
+          <a class="open" href="pdfs/rna-torsions.pdf" target="_blank" rel="noopener">Open PDF</a>
+        </li>
+        <li>
+          <h3>Contributing to a Website with Version Control</h3>
+          <p>Nagan Lab tutorial on Git and GitLab.</p>
+          <a class="open" href="pdfs/version-control.pdf" target="_blank" rel="noopener">Open PDF</a>
+        </li>
+        <li id="notes-trig">
+          <h3>Trig, Inverse Trig, and Series Review</h3>
+          <p>Student notes with 30 practice problems.</p>
+          <a class="open" href="pdfs/trig-series-notes.pdf" target="_blank" rel="noopener">Open PDF</a>
+        </li>
+        <li id="notes-series">
+          <h3>Power Series Review and Beginner Notes</h3>
+          <p>Student notes with practice problems.</p>
+          <a class="open" href="pdfs/power_series.pdf" target="_blank" rel="noopener">Open PDF</a>
+        </li>
+      </ul>
+      <h3 class="subhead">Other talks and posters</h3>
+      <ul class="plain">
+        <li>URECA poster: conformational bias in RNA force fields (spring 2027, upcoming).</li>
+        <li>Stony Brook DoIT: evaluations of new LLMs, SLMs, and VLMs for university adoption (fall 2025).</li>
+        <li>Lab meeting presentations, Huppert Lab and Nagan Lab.</li>
+        <li>ASTC outreach presentations.</li>
+      </ul>
+    </section>
+
+    <section id="teaching" aria-labelledby="h-teaching">
+      <h2 id="h-teaching">Teaching and outreach</h2>
+      <ul class="plain">
+        <li>Web maintainer for the <a href="https://ambermd.org/tutorials/">Amber tutorials site</a>: working with thousands of chemists to resolve their issues and bring their tutorials and code into Amber.</li>
+        <li>Lead math tutor and outreach coordinator, Academic Success and Tutoring Center (ASTC).</li>
+        <li>Tutor and mentor, Stony Brook Athletics.</li>
+        <li>Write study notes (see <a href="#talks">Presentations and notes</a>) and work one-on-one with students, whether they love math or dislike it, to find where they struggle.</li>
+      </ul>
+    </section>
+
+    <section id="community" aria-labelledby="h-community">
+      <h2 id="h-community">Community and work</h2>
+      <ul class="plain">
+        <li>Supervisor at Panera, Farmingdale: baking, talking with the community, and training others.</li>
+        <li>Island Harvest: building <a href="#projects">ClearFile</a> to simplify paperwork for elderly assistance programs.</li>
+        <li>Crisis volunteering: helping neighbors and the community through active listening.</li>
+      </ul>
+    </section>
+
+    <section id="skills" aria-labelledby="h-skills">
+      <h2 id="h-skills">Skills</h2>
+      <dl class="skills">
+        <div><dt>Focus</dt><dd>Computer vision, data analysis, denoising</dd></div>
+        <div><dt>Languages and libraries</dt><dd>Python, PyTorch, CUDA</dd></div>
+        <div><dt>Tools</dt><dd>Git, cloud computing services</dd></div>
+      </dl>
+    </section>
+
+    <section id="projects" aria-labelledby="h-projects">
+      <h2 id="h-projects">Projects</h2>
+      <dl class="projects">
+        <div><dt>NeuroBridge <span class="status">In development</span></dt><dd>Model-transfer learning for brain imaging: carrying models trained on fMRI over to fNIRS.</dd></div>
+        <div><dt>ClearFile <span class="status">In development</span></dt><dd>Scans paper forms into Excel and checks them for compliance, built for Island Harvest's elderly assistance programs.</dd></div>
+        <div><dt>Scope <span class="status">Complete</span></dt><dd>An app for visualizing math and algorithms, from elementary to advanced.</dd></div>
+      </dl>
+    </section>
+
+    <footer>&copy; 2026 Jack Simon</footer>
+  </main>
+</div>
+
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('nav .sections a'));
+  if(!('IntersectionObserver' in window)) return;
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(en){
+      if(en.isIntersecting){
+        links.forEach(function(l){ l.setAttribute('aria-current', l.getAttribute('href')==='#'+en.target.id ? 'true':'false'); });
+      }
+    });
+  },{rootMargin:'-30% 0px -60% 0px'});
+  document.querySelectorAll('main section').forEach(function(s){ io.observe(s); });
+})();
+</script>
+<script src="assets/site.js"></script>
+</body>
+</html>
